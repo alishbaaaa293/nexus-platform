@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Dancing+Script:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    @apply text-gray-900 antialiased bg-slate-50;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* FullCalendar Customizations */
+.fc {
+  @apply font-sans;
+  --fc-button-bg-color: #2563EB;
+  --fc-button-border-color: #2563EB;
+  --fc-button-hover-bg-color: #1D4ED8;
+  --fc-button-hover-border-color: #1D4ED8;
+  --fc-button-active-bg-color: #1E40AF;
+  --fc-button-active-border-color: #1E40AF;
+  --fc-event-bg-color: #3B82F6;
+  --fc-event-border-color: #2563EB;
+  --fc-today-bg-color: #EFF6FF !important;
+}
+
+.fc .fc-toolbar-title {
+  font-family: 'Outfit', sans-serif;
+  @apply text-xl font-bold text-gray-900;
+}
+
+.fc .fc-button {
+  @apply rounded-lg font-medium px-4 py-2 transition-all shadow-sm;
+}
+
+.fc .fc-col-header-cell {
+  @apply py-3 bg-gray-50 border-gray-200 text-gray-600 font-semibold uppercase text-xs tracking-wider;
+}
+
+.fc .fc-timegrid-slot {
+  @apply h-12 border-gray-100;
+}
+
+.fc .fc-timegrid-slot-label {
+  @apply text-xs text-gray-500 font-medium;
+}
+
+.fc .fc-scrollgrid {
+  @apply rounded-xl border border-gray-200 overflow-hidden !important;
+}
+
+.fc-v-event {
+  @apply rounded-lg shadow-sm px-2 py-1 border-l-4 !important;
+}
+
+.fc-event-main {
+  @apply font-medium text-xs;
+}
+
+.font-signature {
+  font-family: 'Dancing Script', cursive;
+}
